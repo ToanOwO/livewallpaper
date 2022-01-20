@@ -1,0 +1,57 @@
+
+body{
+    background: linear-gradient(#2b1055,#7597de);
+    display: flex;
+    min-height: 100vh;
+    overflow-y: hidden;
+
+}
+
+*
+
+
+
+.car
+{
+    position: absolute;
+    bottom: 10%;
+    left: 24%;
+    animation: nhunnhay 1s linear infinite;
+
+}
+.moon
+{
+    top: -100%;
+    mix-blend-mode: screen;
+}
+.surface
+{   
+    
+    height: 200px;
+    width: 300%;
+    display: block;
+    background-image: url(Img_02.png);
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    left: 0%;
+    animation: highway 10s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes highway
+{
+    100%{
+        transform: translate(-2950px);
+    }
+}
+@keyframes nhunnhay{
+    100%{
+        transform:translateY(-1px);
+    }
+    50%{
+        transform:translateY(2px)
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
