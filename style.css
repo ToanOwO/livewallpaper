@@ -13,7 +13,6 @@ body{
 .car
 {
     position: absolute;
-    bottom: 10%;
     bottom: 9.8%;
     left: 24%;
     animation: nhunnhay 1s linear infinite;
