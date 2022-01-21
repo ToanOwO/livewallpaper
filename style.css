@@ -4,10 +4,9 @@ body{
     display: flex;
     min-height: 100vh;
     overflow-y: hidden;
-
 }
 
-*
+
 
 
 
@@ -23,10 +22,10 @@ body{
 {
     top: -100%;
     mix-blend-mode: screen;
+    animation: quay 10s linear infinite;
 }
 .surface
 {   
-    
     height: 200px;
     width: 300%;
     display: block;
@@ -53,5 +52,16 @@ body{
     }
     0%{
         transform: translateY(-1px);
+    }
+}
+@keyframes quay
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg)
     }
 }
